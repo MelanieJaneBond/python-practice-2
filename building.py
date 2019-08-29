@@ -15,7 +15,7 @@ class Building:
         self.owner = purchaser
 
     def print_details(self):
-        print(f"On {self.date_constructed}, {self.owner} purchased the building at {self.address} that is {self.stories} tall!")
+        print(f"On {self.date_constructed}, {self.owner} purchased the building at {self.address} that is {self.stories} stories high!")
 # Create 5 building instances
 # Have each one get purchased by a real estate magnate
 # After purchased, construct each one
@@ -26,27 +26,8 @@ seven_hundred_twelfth.construction()
 seven_hundred_twelfth.purchase("Market Street")
 seven_hundred_twelfth.print_details()
 
+icon_building = Building("600 12th Ave S", 20)
+icon_building.construction()
+icon_building.purchase("Market Street")
+icon_building.print_details()
 
-# import datetime
-
-# format = "%a %b %d %H:%M:%S %Y"
-
-# today = datetime.datetime.today()
-# print 'ISO     :', today
-
-# s = today.strftime(format)
-# print 'strftime:', s
-
-# d = datetime.datetime.strptime(s, format)
-# print 'strptime:', d.strftime(format)
-# $ python datetime_datetime_strptime.py
-
-# ISO     : 2013-02-21 06:35:45.707450
-# strftime: Thu Feb 21 06:35:45 2013
-# strptime: Thu Feb 21 06:35:45 2013
-
-# def construction(self):
-#         format = "%d %b %Y"
-#         self.date_constructed = date
-#         date = datetime.date.today()
-#         date.strftime(format)
