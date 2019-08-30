@@ -110,3 +110,30 @@ for color_dict in eye_colors:
     else:
         color_table[current_color] += 1
 
+#a new exercise for the morning:
+appliances = (["oven", "refrigerator", "coffee maker", "rice cooker"])
+# Add 3 indispensable appliances to this tuple
+
+appliances.append(["toaster", "sink", "trash compactor"])
+#the above was the method I tried, but I think I basically made it a list
+#which isn't "keeping it a tuple" and is more confusing than "making it a set"
+#as some people did... TUPLES ARE IMMUTABLE but they can contain nested objects
+#and the objects inside the tuples are not immutable.
+# print(appliances)
+
+appliancesTuple = ("oven", "refrigerator", "coffee maker", "rice cooker")
+otherTuple = appliancesTuple + ("toaster", "sink", "trash compactor")
+#this one was discovered by Danny, it's very cool and clear to me
+print(otherTuple)
+
+appliances_joe = ("oven", "refrigerator", "coffee maker", "rice cookier")
+appliances_joe = set(appliances_joe)
+appliances_joe.update(["dishwasher", "microwave", "toaster oven"])
+appliances_joe = tuple(appliances_joe)
+print(appliances_joe)
+
+appliances_jake = ("oven", "refrigerator", "coffee maker", "rice cookier")
+appliances_jake += ("stuff",)
+#this method was discovered by Jake. I don't understand it, the teaching team
+#explained it, but, I'm a little fuzzy.
+print(appliances_jake)
